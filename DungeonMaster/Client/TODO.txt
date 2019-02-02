@@ -1,0 +1,10 @@
+HTML/CSS:
+Clear status one/all
+Highlight characters
+Roll initiative, Popup?
+Buff/debuff groups ?
+Misc initiative mod
+
+JAVASCRIPT:
+Status highlighting
+File structure managment (seprarate dirs for campaigns)
