@@ -1,10 +1,23 @@
 HTML/CSS:
 Clear status one/all
-Highlight characters
-Roll initiative, Popup?
-Buff/debuff groups ?
+Highlight characters [Status / Turn]
+Start fight/End fight and
+Roll initiative //Textbox with a roll button. Characters without initiative will be ignored
+and grouped at the bottom.
+Buff/debuff UI + groups ?
 Misc initiative mod
+Add new
+Load Group
+Save
+Add many
+Add from template
+
+
 
 JAVASCRIPT:
 Status highlighting
-File structure managment (seprarate dirs for campaigns)
+File structure management (separate dirs for campaigns && Folders for groups and templates.)
+Hitpoint bar changes colour and injured status
+% in list changing to -1 through -9 and dead with roll prompt
+Popup when someone dies for immediate healing.
+Round counter for death.
