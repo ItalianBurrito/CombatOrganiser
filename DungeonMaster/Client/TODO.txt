@@ -21,3 +21,4 @@ Hitpoint bar changes colour and injured status
 % in list changing to -1 through -9 and dead with roll prompt
 Popup when someone dies for immediate healing.
 Round counter for death.
+"State" to display selected character stats.
