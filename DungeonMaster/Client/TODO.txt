@@ -16,7 +16,7 @@ Add from template
 
 JAVASCRIPT:
 Status highlighting
-File structure management (separate dirs for campaigns && Folders for groups and templates.)
+[Database]File structure management (separate dirs for campaigns && Folders for groups and templates.)
 Hitpoint bar changes colour and injured status
 % in list changing to -1 through -9 and dead with roll prompt
 Popup when someone dies for immediate healing.

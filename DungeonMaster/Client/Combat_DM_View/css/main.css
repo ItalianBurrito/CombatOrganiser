@@ -1,0 +1,105 @@
+/*Makes it a 2 column layout*/
+#con{
+  display:flex;
+  height: 96vh;
+}
+
+/*Puts all elements on same line*/
+#sort{display: inline-flex;}
+#round{display: inline;}
+
+/*Lines up checkboxes with words*/
+#sort input{
+  position: relative;
+  top: 1.2em;
+}
+
+/*Helps with proportions. Display & flex for each subcontainer*/
+#left{
+  display: flex;
+  flex-direction: column;
+  flex-grow:1;
+}
+#right{
+  display: flex;
+  flex-direction: column;
+  flex-grow:5;
+}
+
+/*Ensures proportions stay proper, top stays top,
+bottom stays bottom. */
+#tleft{flex-grow: 100;}
+#bleft{flex-grow: 1;}
+
+#info{flex-grow: 100;}
+#control{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 9;
+}
+
+#ctop{flex-grow: 3;}
+#ctleft{flex-grow: 1;}
+
+/*Element size formatting*/
+#charInfo{
+  resize: none;
+  height: 55vh;
+  width: 100%;
+}
+#next{
+  height: 45px;
+  width: 75px;
+}
+
+/*Formatting for bottom right*/
+#combat, #skills{display:flex;}
+#stats{display: flex;}
+
+#phys, #ment{margin-right: 1em;}
+#saves p,#armour p, #sources p, #attk p{display: inline-flex;}
+#buff{float:right; margin-top:-1.7em;}
+#ctop{display: flex;}
+#ctleft, #ctright{margin: auto;}
+#combat p, #skills p{margin: 0.6em 0em 0em 0em; }
+
+#cbot{
+  text-align: center;
+  border-radius: 5px;
+}
+
+.spells{
+  width: 20px;
+}
+/*Hide spinner arrows from inputs*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#control td{text-align: center;}
+
+/*===============Aesthetics==================*/
+#roundReset{margin-top: -0.5em;}
+#left{
+  border-right: solid black 1px;
+  padding-right: .5em;
+}
+
+#right{padding-left: .5em;}
+
+#bleft{
+  border-top: solid black 1px;
+  padding-top: .5em;
+}
+
+#control{
+  border-top: solid black 1px;
+  padding-top: .5em;
+}
+
+#cbot{background-color: green;}
+
+#armour p, #attk p, #ini, #saves p, #skills{font-weight: bold;}
+#skills p{padding-right: .6em;}
