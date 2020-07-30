@@ -1,6 +1,8 @@
-FROM mysql
+FROM mysql:5.7
 
 ENV MYSQL_DATABASE Dungeons
 ENV MYSQL_ROOT_PASSWORD DNDisforCoolDOODES42069
 
 COPY ./SQL/ /docker-entrypoint-initdb.d/
+
+EXPOSE 1400
