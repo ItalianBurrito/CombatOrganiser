@@ -1,3 +1,4 @@
+[DEPRECIATED]<?
 HTML/CSS:
 Clear status one/all
 Highlight characters [Status / Turn]
@@ -21,12 +22,23 @@ Hitpoint bar changes colour and injured status
 Popup when someone dies for immediate healing.
 Round counter for death.
 "State" to display selected character stats.
+?>[DEPRECEATED]
 
 PAGES:
 Home Page
 Sign in/up Page
 Password recovery
+Add items/feats/spells/etc... to campaigns
 Campaign select page
 Campaign edit page
 Campaign create page (with player invites)
 Dashboard for selected campaign (Player or DM depending on role)
+  -Create character
+  -Level up
+  -Character Sheet
+  -Searching and viewing for feats, items, spells, classes, etc...
+  -Combat screen.
+  -Party screen.
+  -DM: Templates + Create TEMPLATES
+  -DM: NPC (Each NPC will have a character sheet and level up option.).
+  -DM: Able to search feats, items, abilites, etc... and assign them to people/reveal hidden details.
