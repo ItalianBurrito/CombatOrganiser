@@ -12,9 +12,9 @@ $name = $email = $password = $confirmPassword = '';
 if($_SERVER["REQUEST_METHOD"] == "POST"){
   if(empty($_POST['name'])){$nameErr = 'Name is required.';}
   else{$name = scrub_input($_POST['name']);}
-  if(empty($_POST['email']){$emailErr = 'Email is required.';}
+  if(empty($_POST['email'])){$emailErr = 'Email is required.';}
   else{$email = scrub_input($_POST['email']);}
-  if(empty($_POST['password'])){$nameErr = 'Password is required.';}
+  if(empty($_POST['password'])){$passwordErr = 'Password is required.';}
   else{$password = scrub_input($_POST['password']);}
   if(empty($_POST['confirmPassword'])){$confirmPasswordErr = 'Must confirm password.';}
   else{$confirmPassword = scrub_input($_POST['confirmPassword']);}
