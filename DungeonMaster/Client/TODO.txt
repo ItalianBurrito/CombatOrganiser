@@ -13,8 +13,6 @@ Save
 Add many
 Add from template
 
-
-
 JAVASCRIPT:
 Status highlighting
 Hitpoint bar changes colour and injured status

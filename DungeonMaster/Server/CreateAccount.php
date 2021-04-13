@@ -22,7 +22,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   else{$password = scrub_input($_POST['password']);}
 
   if(empty($_POST['confirmPassword'])){$confirmPasswordErr = 'Must confirm password.';}
-  else{$confirmPassword = scrub_input($_POST['confirmPassword']);}
+  else{$confirmPassword = scrub_input($_POST['confirmPassword']);
+    if($password != $confirmPassword){$confirmPasswordErr = 'Passwords must match.';}}
+
+  if($nameErr == $emailErr && $emailErr == $passwordErr && $passwordErr == $confirmPasswordErr){
+    echo 'TRUE';
+  }else{
+    echo 'FALSE';
+  }
 }
 
 //Remove special characters and excess white space.
