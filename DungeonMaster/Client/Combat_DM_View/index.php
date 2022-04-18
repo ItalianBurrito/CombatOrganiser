@@ -1,15 +1,7 @@
 <?php
-$servername = "172.17.0.3";
-$username = "root";
-$password = "DNDisforCoolDOODES42069";
+include('/var/www/html/Server/DB_Connect.php');
 
 try{
-  $conn = new PDO("mysql:host=$servername; dbname=Dungeons",$username, $password);
-  //Set the PDO error mode to exception.
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-  echo "<br>";
-
   $stmt = $conn->prepare("INSERT INTO PLAYERS (PLAYER_NAME, PLAYER_PASS, PLAYER_EMAIL)
   VALUES (:name,:pass ,:email )");
   $stmt->bindParam(':name', $name);
@@ -37,7 +29,7 @@ try{
   }
 
 }catch(PDOException $e){
-  echo "Connection failed: " . $e->getMessage();
+  echo "Operation failed: " . $e->getMessage();
 }
 
 $conn = null;

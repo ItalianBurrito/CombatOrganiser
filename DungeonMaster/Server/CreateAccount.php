@@ -3,7 +3,7 @@ session_start();
 if(!empty($_SESSION['login'])){
   header("location: CampaignList.php");
 }
-//require 'DB_Connect.php';//Change to DB_Query that has nothing but search priv
+//require 'DB_Connect.php';//Change to DB_Query that has nothing but search privileges.
 
 $nameErr = $emailErr = $passwordErr = $confirmPasswordErr = '';
 $name = $email = $password = $confirmPassword = '';

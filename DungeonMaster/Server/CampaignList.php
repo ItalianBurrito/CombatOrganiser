@@ -1,8 +1,4 @@
 <?php
-session_start();
-if(empty($_SESSION['login'])){
-  header("location: Login.php");
-}
+include('/var/www/html/Server/LoginRedirect.php');
 
-echo "You shouldn't be here, " . $_SESSION['login'];
 ?>
